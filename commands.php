@@ -1,15 +1,12 @@
 <?php
 
-
-//echo "in commands\n";
-
-//echo "Our location in : ".basename(__DIR__)."\n";
-
-$cmd_add = require_once __DIR__.'/src/Commands/Add.php';
-$cmd_substract = require_once __DIR__.'/src/Commands/Substract.php';
-$cmd_multiply = require_once __DIR__.'/src/Commands/Multiply.php';
-$cmd_devide = require_once __DIR__.'/src/Commands/Divide.php';
-$cmd_pow = require_once __DIR__.'/src/Commands/Pow.php';
+$cmdDdd = require_once __DIR__.'/src/Commands/Add.php';
+$cmdSubstract = require_once __DIR__.'/src/Commands/Substract.php';
+$cmdMultiply = require_once __DIR__.'/src/Commands/Multiply.php';
+$cmdDevide = require_once __DIR__.'/src/Commands/Divide.php';
+$cmdPow = require_once __DIR__.'/src/Commands/Pow.php';
+$cmdHistoryClear = require_once __DIR__.'/src/Commands/HistoryClear.php';
+$cmdHistoryList = require_once __DIR__.'/src/Commands/HistoryList.php';
 
 return [
     // TODO : Add list of commands here
@@ -17,5 +14,7 @@ return [
     'substract',
     'multiply',
     'divide',
-    'pow'
+    'pow',
+    'historyClear',
+    'historyList'
 ];
